@@ -68,20 +68,20 @@ spec:
               configMapKeyRef:
                 name: my-config
                 key: mariadb-ip
-          - name: system.publicKey.timestamp
-            valueFrom:
-              configMapKeyRef:
-                key: TIMESTAMP
-                name: secret-config
-          - name: system.publicKey.modulus
-            valueFrom:
-              configMapKeyRef:
-                key: MODULUS
-                name: secret-config
-          - name: system.publicKey.exponent
-            valueFrom:
-              configMapKeyRef:
-                key: EXPONENT
-                name: secret-config
+          # - name: system.publicKey.timestamp
+          #   valueFrom:
+          #     configMapKeyRef:
+          #       key: TIMESTAMP
+          #       name: secret-config
+          # - name: system.publicKey.modulus
+          #   valueFrom:
+          #     configMapKeyRef:
+          #       key: MODULUS
+          #       name: secret-config
+          # - name: system.publicKey.exponent
+          #   valueFrom:
+          #     configMapKeyRef:
+          #       key: EXPONENT
+          #       name: secret-config
         ports:
           - containerPort: 2021
